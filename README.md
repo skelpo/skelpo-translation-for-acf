@@ -1,6 +1,7 @@
-# ACF Translate
+# ACF Translate 
+## Translate ACF fields with DeepL
 
-ACF Translate is a WordPress plugin that provides easy translation and localization support for websites built using the Advanced Custom Fields (ACF) plugin. This tool allows you to manage translations for ACF fields, making your website content multilingual and accessible to a global audience.
+ACF Translate is a WordPress plugin that provides easy translation and localization support for websites built using the Advanced Custom Fields (ACF) plugin. This tool allows you to manage translations for ACF fields, making your website content multilingual and accessible to a global audience. The plugin uses DeepL's translation services.
 
 ## Features
 
@@ -18,12 +19,10 @@ ACF Translate is a WordPress plugin that provides easy translation and localizat
 ## Usage
 
 1. Navigate to the WordPress dashboard.
-2. Go to the "ACF Translate" menu.
-3. Select the ACF group or field you want to translate.
-4. Add translations for the chosen fields.
+2. Go to the page or post you want to translate.
+3. Create a new translation of the page or post.
+4. Use the side box to translate everything you see.
 5. Save your changes.
-
-For detailed instructions and examples, please refer to the [documentation](https://github.com/skelpo/acf-translate/wiki).
 
 ## Contributing
 
