@@ -469,6 +469,8 @@
  use Carbon_Fields\Container;
  use Carbon_Fields\Field;
  
+
+ 
  add_action( 'carbon_fields_register_fields', 'acft_attach_theme_options' );
  function acft_attach_theme_options() {
 	 global $languagePairs;
@@ -507,23 +509,16 @@
 	 
  }
  
- add_action( 'after_setup_theme', 'acft_load' );
- add_action( 'rest_api_init', function () {
-   register_rest_route( 'acftranslate/v1', '/licenseKey', array(
-	 'methods' => 'GET',
-	 'callback' => 'saveLicenseKey',
-   ) );
- } );
- 
- function saveLicenseKey( WP_REST_Request $request ) {
-   $key = carbon_get_theme_option("acft_license");
-   if ($key == "") {
-	   carbon_set_theme_option("acft_license", $request["key"]);
-   } 
-   return array(
-	   "success" => true
-   );
-}
+add_action( 'after_setup_theme', 'acft_load' );
+add_action( 'wp_ajax_acft_save_license_key', 'acft_save_license_key' );
+   
+ function acft_save_license_key() {
+  $key = $_POST['key'];
+  carbon_set_theme_option("acft_license", $key);
+  echo json_encode(array("success" => true));
+  wp_die();
+ }
+
  function acft_load() {
 	 require_once( 'vendor/autoload.php' );
 	 \Carbon_Fields\Carbon_Fields::boot();
