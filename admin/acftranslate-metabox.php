@@ -80,7 +80,6 @@ class ACFTranslate_Metabox {
 	
 		$html .= "<span id=\"acft_usage\"></span><script>
 var acft_license_code = '".carbon_get_theme_option("acft_license")."';
-const acft_save_license_url = '".get_rest_url(null, "acftranslate/v1/licenseKey")."';
 const acft_deepl_api_key = '".carbon_get_theme_option("acft_deepl_api_key")."';
 const acft_deepl_api_version = '".carbon_get_theme_option("acft_deepl_api_version")."';
 const acft_google_key = '".carbon_get_theme_option("acft_google_key")."';
