@@ -34,6 +34,8 @@ async function acft_translate() {
 	if (currentState == undefined) {
 		let c = await acft_check();
 		if (c == false) {
+			document.location.href = '/wp-admin/admin.php?page=crb_carbon_fields_container_acf_translate_settings.php';
+			return;
 			let c = await acft_sign_up();
 			acft_license_code = c.licenseKey;
 			c = await acft_check();
