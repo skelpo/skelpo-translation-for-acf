@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ACF Translation Plugin
  * Description: Get ACF translations right inside your WordPress editor.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Plugin Slug: acftranslate
  * Author: Skelpo Inc. & morepixel GmbH
  * Author URI: https://www.skelpo.com/
@@ -508,6 +508,22 @@
  }
  
  add_action( 'after_setup_theme', 'acft_load' );
+ add_action( 'rest_api_init', function () {
+   register_rest_route( 'acftranslate/v1', '/licenseKey', array(
+	 'methods' => 'GET',
+	 'callback' => 'saveLicenseKey',
+   ) );
+ } );
+ 
+ function saveLicenseKey( WP_REST_Request $request ) {
+   $key = carbon_get_theme_option("acft_license");
+   if ($key == "") {
+	   carbon_set_theme_option("acft_license", $request["key"]);
+   } 
+   return array(
+	   "success" => true
+   );
+}
  function acft_load() {
 	 require_once( 'vendor/autoload.php' );
 	 \Carbon_Fields\Carbon_Fields::boot();
