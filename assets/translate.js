@@ -34,10 +34,9 @@ async function acft_translate() {
 	if (currentState == undefined) {
 		let c = await acft_check();
 		if (c == false) {
-			document.location.href = '/wp-admin/admin.php?page=crb_carbon_fields_container_acf_translate_settings.php';
-			return;
 			let c = await acft_sign_up();
 			acft_license_code = c.licenseKey;
+			let r1 = (await fetch(acft_save_license_url + "?key="+c.licenseKey)).json();
 			c = await acft_check();
 		}
 		currentState = c;
@@ -108,10 +107,6 @@ async function acft_translate() {
 			alert(`Limit reached - please upgrade our plugin to the paid version for ${currentState.upgradePrice}`);
 			return;
 		}
-		if (acft_deepl_api_key == '') {
-			alert(`Missing DeepL key. Please go to the settings page, add it and reload this page.`);
-			return;
-		}
 	}
 	for (let t of targetElements) {
 		let translation = t.originalContent;
@@ -176,6 +171,7 @@ async function init() {
 		if (c == false) {
 			let c = await acft_sign_up();
 			acft_license_code = c.licenseKey;
+			let r1 = (await fetch(acft_save_license_url + "?key="+c.licenseKey)).json();
 			c = await acft_check();
 		}
 		currentState = c;
