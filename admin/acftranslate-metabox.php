@@ -79,7 +79,7 @@ class ACFTranslate_Metabox {
 		}
 	
 		$html .= "<span id=\"acft_usage\"></span><script>
-const acft_license_code = '".carbon_get_theme_option("acft_license")."';
+var acft_license_code = '".carbon_get_theme_option("acft_license")."';
 const acft_deepl_api_key = '".carbon_get_theme_option("acft_deepl_api_key")."';
 const acft_deepl_api_version = '".carbon_get_theme_option("acft_deepl_api_version")."';
 const acft_google_key = '".carbon_get_theme_option("acft_google_key")."';
