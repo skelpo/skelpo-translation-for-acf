@@ -36,7 +36,12 @@ async function acft_translate() {
 		if (c == false) {
 			let c = await acft_sign_up();
 			acft_license_code = c.licenseKey;
-			let r1 = (await fetch(acft_save_license_url + "?key="+c.licenseKey)).json();
+			let r1 = await fetch(ajaxurl,{
+				method: 'POST',
+				headers: {
+				  'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+				},
+				body: "action=acft_save_license_key&key="+c.licenseKey});
 			c = await acft_check();
 		}
 		currentState = c;
@@ -171,7 +176,13 @@ async function init() {
 		if (c == false) {
 			let c = await acft_sign_up();
 			acft_license_code = c.licenseKey;
-			let r1 = (await fetch(acft_save_license_url + "?key="+c.licenseKey)).json();
+			let r1 = await fetch(ajaxurl,{
+			method: 'POST',
+			headers: {
+			  'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+			},
+			body: "action=acft_save_license_key&key="+c.licenseKey});
+			console.log("register: ", await r1.json());
 			c = await acft_check();
 		}
 		currentState = c;
