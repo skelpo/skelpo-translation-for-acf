@@ -106,6 +106,10 @@ async function acft_translate() {
 			alert(`Limit reached - please upgrade our plugin to the paid version for ${currentState.upgradePrice}`);
 			return;
 		}
+		if (acft_deepl_api_key == '') {
+			alert(`Missing DeepL key. Please go to the settings page, add it and reload this page.`);
+			return;
+		}
 	}
 	for (let t of targetElements) {
 		let translation = t.originalContent;
