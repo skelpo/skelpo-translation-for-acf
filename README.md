@@ -1,17 +1,17 @@
 ![Translate ACF fields with DeepL](https://repository-images.githubusercontent.com/687052699/720eb8b7-5e07-4938-82a5-8525323a0eab)
 
 
-# ACF Translate 
+# Skelpo Translation for ACF
 ## Translate ACF fields with DeepL
 
-ACF Translate is a WordPress plugin that provides easy translation and localization support for websites built using the Advanced Custom Fields (ACF) plugin. This tool allows you to manage translations for ACF fields, making your website content multilingual and accessible to a global audience. The plugin uses DeepL's translation services.
+Skelpo Translation for ACF is a WordPress plugin that provides easy translation and localization support for websites built using the Advanced Custom Fields (ACF) plugin. This tool allows you to manage translations for ACF fields, making your website content multilingual and accessible to a global audience. The plugin uses DeepL's translation services.
 
 ## Features
 
-- **Simple Integration**: ACF Translate seamlessly integrates with the Advanced Custom Fields plugin, making it easy to translate your custom fields.
+- **Simple Integration**: Skelpo Translation for ACF seamlessly integrates with the Advanced Custom Fields plugin, making it easy to translate your custom fields.
 - **Multilingual Support**: Translate ACF fields and content into multiple languages, enhancing the accessibility of your WordPress site.
 - **User-Friendly**: An intuitive user interface ensures that even non-technical users can manage translations effortlessly.
-- **Performance**: Designed with performance in mind, ACF Translate won't slow down your website.
+- **Performance**: Designed with performance in mind, Skelpo Translation for ACF won't slow down your website.
 
 ## Installation
 
@@ -29,7 +29,7 @@ ACF Translate is a WordPress plugin that provides easy translation and localizat
 
 ## Contributing
 
-We welcome contributions from the community. If you'd like to contribute to ACF Translate, please follow these guidelines:
+We welcome contributions from the community. If you'd like to contribute to Skelpo Translation for ACF, please follow these guidelines:
 
 - Fork the repository.
 - Create a new branch for your feature or bug fix.
@@ -40,18 +40,18 @@ For more information, check out our [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 
-ACF Translate is licensed under the [GPL License](LICENSE). You are free to use, modify, and distribute this software according to the terms of the license.
+Skelpo Translation for ACF is licensed under the [GPL License](LICENSE). You are free to use, modify, and distribute this software according to the terms of the license.
 
 ## Support
 
-If you encounter any issues or have questions about using ACF Translate, please open an issue on the [GitHub repository](https://github.com/skelpo/acf-translate/issues).
+If you encounter any issues or have questions about using Skelpo Translation for ACF, please open an issue on the [GitHub repository](https://github.com/skelpo/acf-translate/issues).
 
 ## Credits
 
-ACF Translate is developed and maintained by Skelpo Inc. & morepixel GmbH.
+Skelpo Translation for ACF is developed and maintained by Skelpo Inc. & morepixel GmbH.
 
 ## Acknowledgments
 
 Special thanks to the [Advanced Custom Fields](https://www.advancedcustomfields.com/) community for their inspiration and support.
 
-We hope you find ACF Translate helpful for managing translations on your WordPress site! If you have any feedback or suggestions, feel free to reach out.
+We hope you find Skelpo Translation for ACF helpful for managing translations on your WordPress site! If you have any feedback or suggestions, feel free to reach out.
