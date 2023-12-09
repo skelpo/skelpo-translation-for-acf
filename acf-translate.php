@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: ACF Translation Plugin
+ * Plugin Name: Skelpo Translation for ACF Plugin
  * Description: Get ACF translations right inside your WordPress editor.
  * Version: 1.0.1
- * Plugin Slug: acftranslate
+ * Plugin Slug: skelpo-translation-for-acf
  * Author: Skelpo Inc. & morepixel GmbH
  * Author URI: https://www.skelpo.com/
  * Requires at least: 4.0.0
@@ -478,7 +478,7 @@
 	 foreach ($languagePairs as $pair) {
 		 $options[$pair['source_lang']] = __($pair['source_lang']);
 	 };
-	 Container::make( 'theme_options', __( 'ACF Translate Settings' ) )
+	 Container::make( 'theme_options', __( 'Skelpo Translation for ACF Settings' ) )
 	 ->add_tab( __( 'Usage & License' ), array(
 		 Field::make( 'text', 'acft_license', __( 'License Key' ) )
 		 ->set_help_text( 'Automatically assigned - you can manually adjust it if needed.' )
@@ -540,6 +540,6 @@ try {
  } catch ( Exception $e ) {
 	 if ( current_user_can( 'manage_options' ) ) {
 		 print_r( $e );
-		 die( __( 'Error loading ACF translate','acftranslate' ) );
+		 die( __( 'Error loading Skelpo Translation for ACF','acftranslate' ) );
 	 }
  }
