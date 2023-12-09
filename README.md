@@ -16,7 +16,7 @@ Skelpo Translation for ACF is a WordPress plugin that provides easy translation 
 ## Installation
 
 1. Clone or download the repository.
-2. Upload the `acf-translate` directory to your WordPress site's `wp-content/plugins` directory.
+2. Upload the `skelpo-translation-for-acf` directory to your WordPress site's `wp-content/plugins` directory.
 3. Activate the plugin through the WordPress admin interface.
 
 ## Usage
@@ -44,7 +44,7 @@ Skelpo Translation for ACF is licensed under the [GPL License](LICENSE). You are
 
 ## Support
 
-If you encounter any issues or have questions about using Skelpo Translation for ACF, please open an issue on the [GitHub repository](https://github.com/skelpo/acf-translate/issues).
+If you encounter any issues or have questions about using Skelpo Translation for ACF, please open an issue on the [GitHub repository](https://github.com/skelpo/skelpo-translation-for-acf/issues).
 
 ## Credits
 
